@@ -1,0 +1,38 @@
+circle {
+    fill: none;
+    stroke-width: 2px;
+    stroke: black;
+}
+
+svg {
+    width: 450px;
+    height: 450px;
+}
+
+@keyframes Rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+div {
+    position: absolute;
+    width: 2px;
+    background: brown;
+    transform-origin: top;
+    top: 218px;
+    left: 247px;
+    animation-name: Rotate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+div:nth-of-type(1) {
+    animation-duration: 50s;
+    height: 180px;
+}
+
+div:nth-of-type(2) {
+    animation-duration: 10s;
+    height: 90px;
+}

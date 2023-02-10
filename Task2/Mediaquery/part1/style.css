@@ -1,0 +1,84 @@
+:root {
+    --widthFooterHeader: 100vw;
+    --widthAsideOne: 20vw;
+    --widthAsideTwo: 20vw;
+    --widthDivMain: 60vw;
+    --heightMain: 90vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.3rem;
+    float: left;
+}
+
+@media screen and (max-width: 850px) {
+    :root {
+        --widthAsideOne: 100vw;
+        --widthAsideTwo: 100vw;
+        --widthDivMain: 100vw;
+    }
+    body > main {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 850px) and (max-width: 1100px) {
+    :root {
+        --widthDivMain: 80vw;
+        --widthAsideTwo: 100vw;
+    }
+
+    body > main {
+        display: block;
+        position: relative;
+        background: deeppink;
+    }
+    aside:nth-of-type(1){
+        position: absolute;
+        top: 0;
+        bottom: 10%;
+    }
+    main>div{
+        margin-left: var(--widthAsideOne);
+    }
+}
+
+header, footer {
+    width: var(--widthFooterHeader);
+}
+
+header {
+    background: mediumseagreen;
+
+}
+
+aside:nth-of-type(1) {
+    float: left;
+    background: deeppink;
+    width: var(--widthAsideOne);
+
+}
+
+main {
+    display: flex;
+}
+
+main > div {
+    background: greenyellow;
+    width: var(--widthDivMain);
+}
+
+aside:nth-of-type(2) {
+    float: right;
+    background: yellow;
+    width: var(--widthAsideTwo);
+}
+
+footer {
+    background: blue;
+    color: white;
+}

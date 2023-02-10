@@ -1,0 +1,147 @@
+.menu1, .menu2, .menu3, .menu4, .menu5, .menu6, .menu7, .menu8, .menu9 /*, .menu10*/
+{
+
+    display: flex;
+    background: dodgerblue;
+    border: 1px solid blue;
+    color: white;
+    height: 2rem;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.menu1 > div, .menu2 > div, .menu3 > div,
+.menu4 > div, .menu5 > div, .menu6 > div,
+.menu7 > div, .menu8 > div, .menu9 > div {
+    padding-top: 5px;
+}
+
+.menu1 > div:hover,
+.menu2 > div:hover,
+.menu3 > div:hover,
+.menu4 > div:hover,
+.menu5 > div:hover,
+.menu6 > div:hover,
+.menu7 > div:hover,
+.menu8 > div:hover,
+.menu9 > div:hover /*,
+.menu10 > li:hover*/
+{
+    background: white;
+    color: lightskyblue;
+    cursor: pointer;
+}
+
+.menu2, .menu7 {
+    flex-direction: row-reverse;
+}
+
+.menu3 {
+    justify-content: center;
+}
+
+.menu3 > div,
+.menu4 > div,
+.menu5 > div {
+    padding-right: 15px;
+}
+
+.menu4, .menu5, .menu6, .menu7, .menu8, .menu9 {
+    height: auto;
+    justify-content: center;
+}
+
+.menu4 > div, .menu5 > div, .menu6 > div, .menu7 > div, .menu9 > div {
+    border: 1px solid blue;
+    padding-left: 10px;
+}
+
+.menu4 > div:nth-child(1) {
+    border-left: 2px solid blue;
+}
+
+.menu4 > div:nth-of-type(4),
+.menu5 > div:nth-child(3), .menu5 > div:nth-child(4),
+.menu6 > div:nth-child(3), .menu6 > div:nth-child(4),
+.menu7 > div:nth-child(1), .menu7 > div:nth-child(3) {
+    border-right: 2px solid blue;
+}
+
+.menu5 > div, .menu6 > div, .menu7 > div {
+    border-width: 2px 0 2px 2px;
+}
+
+.menu5 > div:nth-child(4), .menu6 > div:nth-child(4),
+.menu7 > div:nth-child(2) {
+    border-left: none;
+}
+
+.menu5, .menu6, .menu7 {
+    align-items: center;
+}
+
+.menu6 {
+    justify-content: flex-end;
+}
+
+.menu7 {
+    justify-content: flex-start;
+}
+
+.menu8 {
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.menu8 > div, .menu9 > div {
+    padding: 10px;
+}
+
+.menu9 {
+    flex-direction: column;
+}
+
+.flex-container, .flex-container > .flex-item {
+    border: 2px ridge white;
+}
+
+.flex-container {
+    display: flex;
+    height: auto;
+    background: #ff4c4c;
+    justify-content: flex-start;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.flex-container:hover, .menu10 > li:hover {
+    cursor: pointer;
+}
+
+.flex-container > .flex-item {
+    list-style-type: none;
+    flex-basis: 150px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    color: white;
+    text-align: center;
+    padding: 2%;
+}
+
+.menu10 {
+    display: flex;
+    border: 1px solid black;
+    justify-content: flex-end;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.menu10 > li {
+    list-style-type: none;
+    flex-shrink: 0;
+    flex-basis: 240px;
+    text-align: left;
+}
+
+
+

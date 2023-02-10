@@ -1,0 +1,48 @@
+div:nth-of-type(1), div:nth-of-type(3) {
+    position: relative;
+    width: 40vw;
+    height: 20vw;
+    background: #2dded8;
+    float: left;
+    border: 2px solid #13736e;
+    animation-duration: 5s;
+    transition-duration: 5s;
+    animation-play-state: paused;
+    animation-iteration-count: infinite;
+    z-index: 1;
+}
+
+.text {
+    position: absolute;
+    margin-top: 9vw;
+    margin-left: 35vw;
+    z-index: 0;
+    font-weight: bold;
+}
+
+div:nth-of-type(1) {
+    border-right: 1px solid #13736e;
+    animation-name: PerspectiveDivOne;
+}
+
+div:nth-of-type(3) {
+    border-left: 1px solid #13736e;
+    animation-name: PerspectiveDivTwo;
+}
+
+div:nth-of-type(1):hover,
+div:nth-of-type(3):hover {
+    animation-play-state: running;
+}
+
+@keyframes PerspectiveDivOne {
+    50% {
+        transform: perspective(495px) rotateY(48deg);
+    }
+}
+
+@keyframes PerspectiveDivTwo {
+    50% {
+        transform: perspective(495px) rotateY(-48deg);
+    }
+}

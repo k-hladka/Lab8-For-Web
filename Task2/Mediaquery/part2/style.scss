@@ -1,0 +1,46 @@
+* {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+$bigAndMedium: col;
+@for $i from 1 through 12 {
+  .#{$bigAndMedium}-#{$i} {
+    width: 8.33% * $i;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  $small: col-small;
+  @for $i from 1 through 12 {
+    .#{$small}-#{$i} {
+      width: 8.33% * $i;
+    }
+  }
+}
+
+aside {
+  float: left;
+}
+
+header {
+  background: mediumseagreen;
+
+}
+
+main {
+  background: greenyellow;
+}
+
+aside:nth-of-type(1) {
+  background: deeppink;
+}
+
+aside:nth-of-type(2) {
+  background: yellow;
+}
+
+footer {
+  background: blue;
+  color: white;
+}

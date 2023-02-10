@@ -1,0 +1,117 @@
+* {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 24.99%;
+}
+
+.col-4 {
+  width: 33.32%;
+}
+
+.col-5 {
+  width: 41.65%;
+}
+
+.col-6 {
+  width: 49.98%;
+}
+
+.col-7 {
+  width: 58.31%;
+}
+
+.col-8 {
+  width: 66.64%;
+}
+
+.col-9 {
+  width: 74.97%;
+}
+
+.col-10 {
+  width: 83.3%;
+}
+
+.col-11 {
+  width: 91.63%;
+}
+
+.col-12 {
+  width: 99.96%;
+}
+
+@media screen and (max-width: 900px) {
+  .col-small-1 {
+    width: 8.33%;
+  }
+  .col-small-2 {
+    width: 16.66%;
+  }
+  .col-small-3 {
+    width: 24.99%;
+  }
+  .col-small-4 {
+    width: 33.32%;
+  }
+  .col-small-5 {
+    width: 41.65%;
+  }
+  .col-small-6 {
+    width: 49.98%;
+  }
+  .col-small-7 {
+    width: 58.31%;
+  }
+  .col-small-8 {
+    width: 66.64%;
+  }
+  .col-small-9 {
+    width: 74.97%;
+  }
+  .col-small-10 {
+    width: 83.3%;
+  }
+  .col-small-11 {
+    width: 91.63%;
+  }
+  .col-small-12 {
+    width: 99.96%;
+  }
+}
+aside {
+  float: left;
+}
+
+header {
+  background: mediumseagreen;
+}
+
+main {
+  background: greenyellow;
+}
+
+aside:nth-of-type(1) {
+  background: deeppink;
+}
+
+aside:nth-of-type(2) {
+  background: yellow;
+}
+
+footer {
+  background: blue;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

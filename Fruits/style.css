@@ -1,0 +1,81 @@
+div:not(div[id="parent"]) {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    background: url("img/kiwi.png") center center no-repeat;
+    background-size: cover;
+}
+
+div:not(div[id="parent"]):hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+#parent {
+    position: relative;
+    width: 70vw;
+    height: 70vh;
+}
+
+@keyframes Kiwi {
+    50% {
+        top: 20%;
+        left: 10%;
+    }
+}
+
+@keyframes Apple {
+    50% {
+        top: 10%;
+        left: 30%;
+    }
+}
+
+@keyframes Strawberry {
+    50% {
+        top: 5%;
+        left: 50%;
+    }
+}
+
+@keyframes Pear {
+    50% {
+        top: 10%;
+        left: 70%;
+    }
+}
+
+@keyframes Pomegranate {
+    50% {
+        top: 20%;
+        left: 90%;
+    }
+}
+
+#apple {
+    animation-name: Apple;
+    background-image: url("img/apple.png");
+}
+
+#strawberry {
+    animation-name: Strawberry;
+    background-image: url("img/strawberry.png");
+}
+
+#pear {
+    animation-name: Pear;
+    background-image: url("img/pear.png");
+}
+
+#pomegranate {
+    animation-name: Pomegranate;
+    background-image: url("img/pomegranate.png");
+}
+
+#kiwi {
+    animation-name: Kiwi;
+}
